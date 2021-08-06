@@ -1,0 +1,404 @@
+// import module : breakpoints
+@import "../../components/breakpoints/breakpoints.scss";
+
+// container division
+.container {
+  // background: linear-gradient(#010101, #1a1a1b);
+  background-color: #020c1b;
+  color: #64ffda;
+}
+
+// header division
+.header {
+  width: 100%;
+  height: auto;
+  @include media-min(xs-min) {
+    text-align: left;
+  }
+  @include media-min(md-min) {
+    text-align: center;
+  }
+
+  &__wrap {
+    height: 100%;
+    font-size: $body;
+  }
+
+  // header navbar
+  .hnav {
+    width: 100%;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-max(xs-max) {
+        padding: 2em 1.8em;
+      }
+      @include media-btw(sm-min, md-max) {
+        padding: 2em 3em;
+      }
+      @include media-min(lg-min) {
+        padding: 2em 4em;
+      }
+    }
+
+    &__line {
+      margin: 0.55em 0;
+      background-color: $light;
+      border-radius: 50px;
+      width: 1.45em;
+      height: 0.13em;
+    }
+  }
+
+  // header main
+  .hmain {
+    $tpad: 7em;
+    @include media-max(xs-max) {
+      padding: $tpad 1.8em;
+    }
+    @include media-min(sm-min) {
+      padding: $tpad 5em;
+    }
+    @include media-min(md-min) {
+      padding: $tpad 12em;
+    }
+    @include media-min(lg-min) {
+      padding: $tpad 15em;
+    }
+    @include media-min(xl-min) {
+      padding: $tpad 21em;
+    }
+
+    &__title {
+      @include media-max(xs-max) {
+        font-size: $head-2;
+      }
+      @include media-min(sm-min) {
+        font-size: $head-1;
+      }
+      @include media-min(lg-min) {
+        font-size: $lghead;
+      }
+      line-height: 170%;
+    }
+  }
+}
+
+// main division
+.main {
+  width: auto;
+  height: auto;
+
+  &__wrap {
+    height: 100%;
+    font-size: $body;
+  }
+
+  // about section
+  .about {
+    @include media-min(xs-min) {
+      padding: 4em 1.8em;
+      text-align: justify;
+    }
+    @include media-min(md-min) {
+      padding: 4em 3em;
+      text-align: center;
+    }
+    @include media-min(lg-min) {
+      padding: 4em 11em;
+      text-align: center;
+    }
+    @include media-min(xl-min) {
+      padding: 4em 18em;
+      text-align: center;
+    }
+
+    &__caption {
+      @include media-min(xs-min) {
+        font-size: $caption-2;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+      @include media-min(md-min) {
+        font-size: $caption;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+    }
+
+    &__title {
+      @include media-min(xs-min) {
+        font-size: $head-3;
+        margin-top: 15px;
+      }
+      @include media-min(md-min) {
+        font-size: $head-2;
+        margin-top: 10px;
+      }
+    }
+
+    &__summary {
+      @include media-min(xs-min) {
+        margin-top: 25px;
+        line-height: 180%;
+      }
+      @include media-min(md-min) {
+        margin-top: 20px;
+        line-height: 200%;
+      }
+    }
+  }
+
+  // works section
+  .works {
+    @include media-min(xs-min) {
+      padding: 4em 1.8em;
+      text-align: justify;
+    }
+    @include media-btw(md-min, md-max) {
+      padding: 4em 8em;
+      text-align: center;
+    }
+    @include media-min(lg-min) {
+      padding: 4em 4em;
+      text-align: center;
+    }
+
+    &__caption {
+      @include media-min(xs-min) {
+        font-size: $caption-2;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+      @include media-min(md-min) {
+        font-size: $caption;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+    }
+
+    &__title {
+      @include media-min(xs-min) {
+        font-size: $head-3;
+        margin-top: 8px;
+      }
+      @include media-min(md-min) {
+        font-size: $head-2;
+        margin-top: 10px;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      @include media-min(lg-min) {
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: row;
+      }
+      @include media-min(xl-min) {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-auto-flow: row;
+      }
+    }
+
+    &__card {
+      @include media-min(xs-min) {
+        background-color: #0c0c0c;
+        text-align: left;
+        // border-radius: 30px;
+        margin-top: 30px;
+      }
+      @include media-min(lg-min) {
+        background-color: #0c0c0c;
+        text-align: left;
+        // border-radius: 30px;
+        margin: 0 15px;
+        margin-top: 40px;
+      }
+    }
+
+    // .card-giles {
+    //   background: url(../../../../assets/image/gc.png) 50% 50% no-repeat #0c0c0c;
+    // }
+
+    &__cwrap {
+      background-color: rgba($color: #0c0c0c, $alpha: 0.85);
+    }
+
+    &__ccont {
+      padding: 3.5em 2.5em;
+    }
+
+    &__ctags {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.1em;
+    }
+
+    &__ctag {
+      color: gray;
+      font-size: $caption;
+      margin-right: 1em;
+    }
+
+    &__ctitle {
+      font-size: $head-3;
+      font-weight: $md;
+      letter-spacing: 0.3px;
+    }
+
+    &__csummary {
+      margin-top: 0.75em;
+      font-size: $body;
+      line-height: 200%;
+      letter-spacing: 0.3px;
+    }
+
+    &__clinks {
+      margin-top: 2em;
+      display: flex;
+      align-items: center;
+    }
+
+    &__clink {
+      margin-right: 1.5em;
+    }
+  }
+
+  // contact section
+  .contact {
+    text-align: center;
+    @include media-max(xs-max) {
+      padding: 4em 2em;
+    }
+    @include media-min(sm-min) {
+      padding: 4em 8em;
+    }
+    @include media-min(md-min) {
+      padding: 4em 15em;
+    }
+    @include media-min(lg-min) {
+      padding: 4em 22em;
+    }
+    @include media-min(xl-min) {
+      padding: 4em 28em;
+    }
+
+    &__caption {
+      @include media-min(xs-min) {
+        font-size: $caption-2;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+      @include media-min(md-min) {
+        font-size: $caption;
+        color: $gray;
+        font-weight: $bd;
+        letter-spacing: 2px;
+      }
+    }
+
+    &__title {
+      @include media-min(xs-min) {
+        font-size: $head-3;
+        margin-top: 8px;
+      }
+      @include media-min(md-min) {
+        font-size: $head-2;
+        margin-top: 10px;
+      }
+    }
+
+    &__summary {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      line-height: 185%;
+    }
+
+    &__cta {
+      margin-bottom: 2em;
+    }
+    &__socitems {
+      margin-bottom: 1em;
+      a {
+        text-decoration: none;
+        padding: 0 0.5em;
+      }
+    }
+    &__socitem {
+      padding: 0 0.5em;
+    }
+  }
+}
+
+// footer division
+.footer {
+  text-align: center;
+  @include media-max(sm-max) {
+    padding: 2.5em 2em;
+    padding-top: 5em;
+  }
+  @include media-min(md-min) {
+    padding: 2.5em 5em;
+    padding-top: 5em;
+  }
+  font-size: $body;
+  letter-spacing: 0.2px;
+  margin-right: -0.2px;
+  font-weight: $rg;
+  a {
+    color: $light;
+    text-decoration: none;
+  }
+
+  &__devinfo {
+    @include media-min(md-min) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      color: $light;
+      font-weight: $sb;
+    }
+    a:hover {
+      color: $gray;
+      transition: 0.7s all ease-in;
+    }
+  }
+  &__thedev {
+    margin-left: 0.15em;
+  }
+  &__sep {
+    @include media-max(sm-max) {
+      display: none;
+    }
+    margin: 0 0.8em;
+  }
+  &__br {
+    @include media-min(md-min) {
+      display: none;
+    }
+    margin-top: 1em;
+  }
+
+  // github info
+  &__githubinfo {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  &__githubstars {
+    margin-right: 0.35em;
+  }
+
+  &__githubforks {
+    margin-left: 0.35em;
+  }
+}

@@ -1,0 +1,15 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Greycliff CF", "Gilroy";
+  font-family: "Gilroy", "Greycliff CF";
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 0.85px #ffffff;
+}

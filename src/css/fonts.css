@@ -1,0 +1,99 @@
+/* greycliff cf typeface */
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF Regular"), local("GreycliffCF-Regular"),
+    url("/assets/font/greycliffcf/GreycliffCF-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF Medium"), local("GreycliffCF-Medium"),
+    url("/assets/font/greycliffcf/GreycliffCF-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF DemiBold"), local("GreycliffCF-DemiBold"),
+    url("/assets/font/greycliffcf/GreycliffCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF Bold"), local("GreycliffCF-Bold"),
+    url("/assets/font/greycliffcf/GreycliffCF-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF ExtraBold"), local("GreycliffCF-ExtraBold"),
+    url("/assets/font/greycliffcf/GreycliffCF-ExtraBold.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: local("Greycliff CF Heavy"), local("GreycliffCF-Heavy"),
+    url("/assets/font/greycliffcf/GreycliffCF-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* sk modernist typeface */
+@font-face {
+  font-family: "SK Modernist";
+  src: local("SK Modernist Regular"), local("SKModernist-Regular"),
+    url("/assets/font/sk-modernist/Sk-Modernist-Regular.otf")
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SK Modernist";
+  src: local("SK Modernist Bold"), local("SKModernist-Bold"),
+    url("/assets/font/sk-modernist/Sk-Modernist-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SK Modernist Mono";
+  src: local("SK Modernist Mono"), local("SKModernist-Mono"),
+    url("/assets/font/sk-modernist/Sk-Modernist-Mono.otf") format("opentype");
+  font-style: normal;
+}
+
+/* gilroy typeface */
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("/assets/font/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("/assets/font/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("/assets/font/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

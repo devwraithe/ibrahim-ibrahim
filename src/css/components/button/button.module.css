@@ -1,0 +1,16 @@
+.btn-white {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.btn-sm {
+  padding: 0.4em 0.8em;
+}
+
+.btn-white-outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=button.module.css.map */
