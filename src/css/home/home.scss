@@ -1,0 +1,682 @@
+// ========== module : breakpoints ========== //
+@import "../modules/__breakpoints.scss";
+// ========== moodule : typography ==========
+@import "../modules/__typography.scss";
+// ========== moodule : colors ==========
+@import "../modules/__colors.scss";
+
+// ========== particles division : open ========== //
+.particles {
+  width: 100vw;
+  height: 100vh;
+  height: fill-available;
+  position: fixed;
+  background-color: $dark;
+  z-index: -10;
+}
+// ========== particles division : close ========== //
+
+// ========== preload division : open ========== //
+.preload {
+  width: 100vw;
+  height: 100vh;
+  height: fill-available;
+  position: fixed;
+  background-color: $dark;
+  overflow: hidden;
+  z-index: 10;
+
+  &__wrap {
+    height: 100%;
+    width: auto;
+  }
+
+  &__content {
+    font-family: $sk-modernist-mono;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    @include media-exp(fine) {
+      font-size: $sub;
+    }
+  }
+
+  .dev {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+// ========== preload division : close ========== //
+
+// ========== portfolio division : open ========== //
+.container {
+  display: none;
+}
+// ========== portfolio division : close ========== //
+
+// ========== header division : open ========== //
+.header {
+  width: auto;
+
+  .hnav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-max(xs-max) {
+      padding: 2.2em 2em;
+    }
+
+    @include media-btw(sm-min, md-max) {
+      padding: 2.45em 3em;
+    }
+
+    @include media-min(lg-min) {
+      padding: 2.8em 4.5em;
+    }
+
+    &__logo {
+      width: auto;
+
+      @include media-min(lg-min) {
+        margin-top: -7px;
+      }
+    }
+
+    &__vector {
+      height: auto;
+
+      @include media-max(sm-max) {
+        width: 90px;
+      }
+
+      @include media-min(md-min) {
+        width: 100px;
+      }
+
+      @include media-exp(fine) {
+        width: 100px;
+      }
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      .ref-lg {
+        @include media-max(md-max) {
+          display: none;
+        }
+      }
+    }
+
+    &__item {
+      @include media-min(lg-min) {
+        padding-left: 3.5em;
+      }
+
+      @include media-min(xl-min) {
+        padding-left: 4.1em;
+      }
+    }
+  }
+
+  .hmain {
+    width: auto;
+
+    @include media-max(xs-max) {
+      padding: 7em 2em;
+    }
+
+    $ypadding: 9.8em;
+    @include media-min(sm-min) {
+      padding: $ypadding 4em;
+    }
+
+    @include media-min(md-min) {
+      padding: $ypadding 8em;
+    }
+
+    @include media-min(lg-min) {
+      padding: $ypadding 13em;
+    }
+
+    @include media-min(xl-min) {
+      padding: $ypadding 21em;
+    }
+
+    &__caption {
+      font-size: $c2;
+      color: $gray;
+      text-align: center;
+      font-weight: $md;
+
+      @include media-max(sm-max) {
+        letter-spacing: 3px;
+        text-indent: 3px;
+      }
+
+      @include media-min(md-min) {
+        letter-spacing: 5px;
+        text-indent: 5px;
+        margin-bottom: -1.4em;
+      }
+    }
+
+    &__title {
+      font-weight: $rg;
+      line-height: 160%;
+      letter-spacing: 0.5px;
+      text-indent: 0.5px;
+      text-align: center;
+      margin-top: 0.6em;
+
+      @include media-max(xs-max) {
+        font-size: $h2;
+        line-height: 150%;
+      }
+
+      @include media-min(sm-min) {
+        font-size: $h1;
+      }
+
+      @include media-min(md-min) {
+        font-size: $d4;
+      }
+
+      @include media-min(lg-min) {
+        font-size: $d2;
+      }
+
+      @include media-min(xl-min) {
+        font-size: $d1;
+      }
+    }
+  }
+}
+// ========== header division : close ========== //
+
+// ========== about division : open ========== //
+.about {
+  width: auto;
+  text-align: center;
+
+  @include media-max(xs-max) {
+    padding: 2em 2em;
+  }
+
+  $ypadding: 3em;
+  @include media-min(sm-min) {
+    padding: $ypadding 3em;
+  }
+
+  @include media-min(md-min) {
+    padding: $ypadding 8em;
+  }
+
+  @include media-min(lg-min) {
+    padding: $ypadding 13em;
+  }
+
+  @include media-min(xl-min) {
+    padding: $ypadding 21em;
+  }
+
+  &__caption {
+    font-size: $c2;
+    color: $gray;
+    font-weight: $md;
+
+    @include media-max(sm-max) {
+      letter-spacing: 3px;
+      text-indent: 3px;
+    }
+
+    @include media-min(md-min) {
+      letter-spacing: 5px;
+      text-indent: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: $rg;
+    line-height: 155%;
+    margin-top: 0.6em;
+
+    @include media-max(sm-max) {
+      font-size: $h4;
+    }
+
+    @include media-min(md-min) {
+      font-size: $h3;
+      text-align: left;
+    }
+  }
+
+  &__info {
+    line-height: 180%;
+    letter-spacing: 0.7px;
+    text-indent: 0.7px;
+
+    @include media-max(sm-max) {
+    }
+
+    @include media-min(md-min) {
+      text-align: justify;
+    }
+  }
+
+  &__infob {
+    margin-top: 1.35em;
+  }
+}
+// ========== about division : open ========== //
+
+// ========== works division : open ========== //
+.works {
+  width: auto;
+  text-align: center;
+
+  @include media-max(xs-max) {
+    padding: 8.5em 2em;
+  }
+
+  $ypadding: 14em;
+  @include media-min(sm-min) {
+    padding: $ypadding 5em;
+  }
+
+  @include media-min(md-min) {
+    padding: $ypadding 2em;
+  }
+
+  @include media-min(lg-min) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  &__caption {
+    font-size: $c2;
+    color: $gray;
+    font-weight: $md;
+
+    @include media-max(sm-max) {
+      letter-spacing: 3px;
+      text-indent: 3px;
+    }
+
+    @include media-min(md-min) {
+      letter-spacing: 5px;
+      text-indent: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: $rg;
+    line-height: 155%;
+    margin-top: 0.5em;
+
+    @include media-max(sm-max) {
+      font-size: $h3;
+    }
+
+    @include media-min(md-min) {
+      font-size: $h2;
+    }
+  }
+
+  &__cards {
+    margin-top: 2.7em;
+    @include media-min(md-min) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-auto-flow: row;
+    }
+  }
+
+  &__card {
+    text-align: left;
+    @include media-max(md-max) {
+      margin-bottom: 50px;
+    }
+
+    @include media-min(md-min) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @include media-min(lg-min) {
+      margin: 0 15px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  .natgeo-header {
+    background-color: #c78408;
+    @include media-max(md-max) {
+      background: url("../../../assets/images/ngh.jpg") $dark 50% 50% no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .ibrahims-portfolio {
+    background-color: #0a0a0a;
+    @include media-max(md-max) {
+      margin-bottom: 50px;
+      background: url("../../../assets/images/iip.png") $dark 50% 50% no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__cdetails {
+    z-index: 30;
+    @include media-max(md-max) {
+      padding: 2.5em 2em;
+      width: auto;
+    }
+    @include media-min(lg-min) {
+      padding: 2.8em 3em;
+      padding-right: 1.5em;
+      width: 50%;
+    }
+  }
+
+  .wcard-wrap {
+    @include media-max(md-max) {
+      background-color: rgba($color: $dark, $alpha: 0.4);
+    }
+  }
+
+  &__ctags {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1em;
+    font-weight: $md;
+  }
+
+  &__ctag {
+    color: $gray;
+    font-size: $bdy;
+    margin-right: 1em;
+  }
+
+  &__ctitle {
+    font-size: $h3;
+    font-weight: $md;
+    letter-spacing: 0.3px;
+    text-indent: 0.3px;
+  }
+
+  &__cinfo {
+    margin-top: 0.75em;
+    font-size: $bdy;
+    line-height: 210%;
+    letter-spacing: 0.3px;
+    text-indent: 0.3px;
+    @include media-btw(sm-min, sm-max) {
+      width: 70%;
+    }
+  }
+
+  &__imagesrc {
+    @include media-max(md-max) {
+      display: none;
+    }
+
+    @include media-min(lg-min) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__imagewrap {
+    @include media-max(md-max) {
+      display: none;
+    }
+    @include media-min(lg-min) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: rgba($color: $dark, $alpha: 0.4);
+    }
+  }
+
+  &__clinks {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__clink {
+    @include media-min(lg-min) {
+      margin-right: 1.8em;
+    }
+  }
+
+  .link-prev {
+    @include media-max(md-max) {
+      margin-left: 1.8em;
+    }
+  }
+}
+// ========== works division : close ========== //
+
+// ========== contact division : open ========== //
+.contact {
+  width: auto;
+  text-align: center;
+
+  $ypadding: 0;
+  @include media-max(xs-max) {
+    padding: $ypadding 2em;
+  }
+
+  @include media-min(sm-min) {
+    padding: $ypadding 8em;
+  }
+
+  @include media-min(md-min) {
+    padding: $ypadding 14em;
+  }
+
+  @include media-min(lg-min) {
+    padding: $ypadding 21em;
+  }
+
+  @include media-min(xl-min) {
+    padding: $ypadding 28em;
+  }
+
+  &__caption {
+    font-size: $c2;
+    color: $gray;
+    font-weight: $md;
+
+    @include media-max(sm-max) {
+      letter-spacing: 3px;
+      text-indent: 3px;
+    }
+
+    @include media-min(md-min) {
+      letter-spacing: 5px;
+      text-indent: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: $rg;
+    line-height: 155%;
+    margin-top: 0.7em;
+    text-align: center;
+
+    @include media-max(sm-max) {
+      font-size: $h4;
+    }
+
+    @include media-min(md-min) {
+      font-size: $h3;
+    }
+  }
+
+  &__note {
+    margin-top: -0.5em;
+    line-height: 180%;
+  }
+
+  &__cta {
+    margin-top: 2em;
+    margin-bottom: 2.2em;
+  }
+
+  &__items {
+    margin-bottom: 1em;
+  }
+
+  &__item {
+    padding: 0 0.5em;
+  }
+
+  .resume-caption {
+    margin-top: 7em;
+    margin-bottom: 2em;
+  }
+
+  &__resumecta {
+    margin-top: 1em;
+  }
+
+  &__devinfo {
+    margin-top: 5em;
+    padding-bottom: 2em;
+
+    @include media-min(md-min) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__devname {
+    margin-left: 0.15em;
+  }
+
+  &__space {
+    @include media-max(sm-max) {
+      display: none;
+    }
+
+    margin: 0 0.8em;
+  }
+
+  &__margin {
+    @include media-min(md-min) {
+      display: none;
+    }
+    margin-top: 1em;
+  }
+}
+// ========== contact division : close ========== //
+
+// ========== other components : open ========== //
+// button size
+.btn-c {
+  @include media-btw(lg-min, xl-max) {
+    padding: 0.85em 1.5em;
+    letter-spacing: 0.5px;
+    text-indent: 0.5px;
+  }
+}
+.btn-b {
+  @include media-btw(sm-min, md-max) {
+    padding: 0.7em 1.4em;
+    @include media-exp(fine) {
+      padding-bottom: 0.85em;
+    }
+    letter-spacing: 0.4px;
+    text-indent: 0.4px;
+  }
+}
+.btn-a {
+  @include media-max(xs-max) {
+    padding: 0.85em 1.3em;
+    @include media-exp(fine) {
+      padding-bottom: 0.75em;
+    }
+    letter-spacing: 0.3px;
+    text-indent: 0.3px;
+  }
+}
+
+// button solid
+.btn-wht {
+  background-color: $light;
+  color: $dark;
+  border: 1px solid $light;
+}
+
+.btn-blk {
+  background-color: $dark;
+  color: $light;
+  border: 1px solid $dark;
+}
+
+// button lined
+.btn-wht-o {
+  background-color: transparent;
+  color: $light;
+  border: 1.8px solid $light;
+}
+.btn-wht-o:hover {
+  background-color: $light;
+  color: $dark;
+  transition: 0.5s all ease-in-out;
+}
+
+// button round
+.btn-rnd-1 {
+  border-radius: 5px;
+}
+.btn-rnd-2 {
+  border-radius: 10px;
+}
+.btn-rnd-10 {
+  border-radius: 50px;
+}
+// ========== other components : close ========== //
+
+// ========== public elements : open ========== //
+.md-elem {
+  @include media-max(sm-max) {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $light;
+}
+
+a:hover {
+  color: $gray;
+  transition: 0.5s all ease;
+}
+// ========== public elements : close ========== //

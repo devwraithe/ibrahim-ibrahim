@@ -1,15 +1,66 @@
+/* ========== base ========== */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Greycliff CF", "Gilroy";
-  font-family: "Gilroy", "Greycliff CF";
-  font-family: "Gilroy";
+  font-family: "Greycliff CF", "Gilroy", "SK Modernist";
   font-weight: 400;
   font-size: 15px;
-  background-color: #000000;
+  background-color: none;
   color: #ffffff;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  text-shadow: 0 0 0.85px #ffffff;
+  cursor: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(200, 200, 200);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
+/* plugin mod */
+@media screen and (max-width: 991.98px) {
+  html,
+  a {
+    cursor: auto;
+  }
+
+  #pointer-dot,
+  #pointer-ring {
+    display: none;
+    pointer-events: visible;
+  }
+}
+
+@media screen and (pointer: fine) {
+  #pointer-dot,
+  #pointer-ring {
+    display: block;
+    pointer-events: none;
+  }
+}
+
+@media screen and (pointer: coarse) {
+  #pointer-dot,
+  #pointer-ring {
+    display: none;
+    pointer-events: visible;
+  }
 }

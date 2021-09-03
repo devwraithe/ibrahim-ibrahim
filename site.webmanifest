@@ -1,5 +1,5 @@
 {
-  "short_name": "Ibrahim Ibrahim - Designer | Developer | Engineer, DevWraithe",
+  "short_name": "Ibrahim Ibrahim - Craftsman | Designer | Developer | Engineer, DevWraithe",
   "name": "Ibrahim Ibrahim",
   "icons": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "background_color": "#121212",
+  "theme_color": "#121212"
 }
